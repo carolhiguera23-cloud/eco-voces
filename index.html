@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Didáctica: Eco-Voces del Territorio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Nunito:wght@400;600;700;800&family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f0fdf4; /* Fondo verde suave */
+            background-image: radial-gradient(#dcfce7 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        h1, h2, h3, .title-font {
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .verb-imperfect {
+            background-color: #fef08a; /* Amarillo para Imperfecto */
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+            color: #854d0e;
+        }
+        .verb-indefinite {
+            background-color: #fecaca; /* Rojo/Rosado para Indefinido */
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+            border: 2px solid #ef4444;
+            color: #991b1b;
+        }
+        .card-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(22, 101, 52, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-800 pb-12">
+
+    <!-- PORTADA COMPLETA (OCUPA TODA LA PÁGINA) -->
+    <header class="relative min-h-screen w-full flex flex-col justify-between p-6 md:p-16 text-white overflow-hidden bg-black">
+        <!-- Imagen de fondo de alta resolución: Páramo de Colombia con nieve y frailejones -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=2000&q=90" alt="Páramo de Colombia con nieve y frailejones" class="object-cover w-full h-full opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-t from-green-950 via-black/30 to-black/40"></div>
+        </div>
+        
+        <!-- Parte Superior: Subtítulo Centrado y Nivel B1 en la siguiente línea -->
+        <div class="relative z-10 w-full text-center">
+            <p class="font-montserrat text-sm md:text-lg uppercase tracking-[0.2em] text-green-200 font-medium drop-shadow-md leading-relaxed">
+                Unidad Didáctica de español como Lengua Extranjera
+                <span class="block mt-2 text-white font-bold text-base md:text-xl tracking-[0.3em]">Nivel B1</span>
+            </p>
+        </div>
+
+        <!-- Centro: Título principal tipografía grande y limpia -->
+        <div class="relative z-10 w-full text-center my-auto pt-8 pb-4">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none drop-shadow-2xl font-poppins mb-4">
+                Eco-voces del<br><span class="text-green-300">Territorio</span>
+            </h1>
+            <div class="w-24 h-1.5 bg-green-400 rounded-full mx-auto mb-4 shadow-lg"></div>
+        </div>
+
+        <!-- Parte Inferior: Recuadro Horizontal Alargado (3 Columnas de objetivos) -->
+        <div class="relative z-10 w-full max-w-6xl mx-auto backdrop-blur-md bg-white/10 border border-white/20 p-6 md:p-8 rounded-2xl shadow-2xl mt-auto">
+            <h3 class="font-poppins font-bold text-lg md:text-xl mb-4 text-green-300 border-b border-white/20 pb-2 flex items-center gap-2">
+                <span>🍃</span> En esta unidad vas a:
+            </h3>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm md:text-base font-montserrat text-gray-100 leading-relaxed">
+                <li class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/10">
+                    <span class="text-green-400 text-lg font-bold">✦</span>
+                    <span>Explorar mitos y leyendas del territorio hispanohablante.</span>
+                </li>
+                <li class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/10">
+                    <span class="text-green-400 text-lg font-bold">✦</span>
+                    <span>Aprender a "pintar paisajes" con el pasado (Imperfecto) y a narrar los hechos que rompen la calma (Indefinido).</span>
+                </li>
+                <li class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/10">
+                    <span class="text-green-400 text-lg font-bold">✦</span>
+                    <span>Convertirte en periodista ambiental para denunciar una problemática ecológica.</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- CONTENIDO DE LA UNIDAD -->
+    <main class="max-w-4xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- Sección 1: Actividad de Inicio - El Despertar de los Sentidos -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 card-shadow border-2 border-green-100">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-2xl">🌄</div>
+                <h2 class="text-3xl text-green-700 font-bold">1. Actividad de Inicio: El Despertar de los Sentidos</h2>
+            </div>
+            
+            <div class="flex flex-col gap-8">
+                <!-- Galería de imágenes del Páramo sin textos que las tapen -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Foto 1: Montañas y niebla -->
+                    <div class="rounded-2xl overflow-hidden shadow-md relative h-64 bg-gray-200 group">
+                        <img src="https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Páramo con niebla" class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <!-- Foto 2: Vegetación (Frailejones evocativos) -->
+                    <div class="rounded-2xl overflow-hidden shadow-md relative h-64 bg-gray-200 group">
+                        <img src="https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vegetación andina" class="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                </div>
+                
+                <!-- Actividad interactiva -->
+                <div class="w-full space-y-4">
+                    <p class="text-lg text-gray-700"><strong>Instrucción:</strong> Observa las imágenes del páramo. Imagina que estás allí a las 5:00 a.m.</p>
+                    
+                    <div class="bg-blue-50 p-5 md:p-6 rounded-xl border border-blue-200 shadow-inner grid md:grid-cols-2 gap-6 items-center">
+                        <div>
+                            <label for="padlet-sim" class="block font-bold text-blue-800 mb-2">Escribe en nuestro muro de Padlet tres adjetivos que describan este escenario:</label>
+                            <p class="text-sm text-blue-600 mb-3">(Ejemplo: frío, misterioso, sagrado)</p>
+                            <input type="text" id="padlet-sim" placeholder="Tus tres adjetivos aquí..." class="w-full p-3 border-2 border-blue-300 rounded-lg focus:outline-none focus:border-blue-500 bg-white">
+                            <button type="button" class="mt-3 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg text-sm w-full transition shadow">
+                                ☁️ Simular envío al Padlet
+                            </button>
+                        </div>
+
+                        <div class="bg-indigo-50 p-5 rounded-xl border-l-4 border-indigo-400 h-full flex flex-col justify-center">
+                            <p class="text-indigo-800 font-bold mb-2">🤔 Pregunta de reflexión:</p>
+                            <p class="text-indigo-600 italic text-lg">¿Quién crees que vive detrás de esa niebla tan espesa?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Comprensión Lectora -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 card-shadow border-2 border-green-100">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center text-2xl">📖</div>
+                <h2 class="text-3xl text-purple-700 font-bold">2. Comprensión Lectora: "El Guardián de la Niebla"</h2>
+            </div>
+            
+            <div class="bg-purple-50 p-6 rounded-2xl border border-purple-100 text-lg leading-relaxed relative overflow-hidden">
+                <div class="absolute top-0 right-0 text-8xl opacity-10 -mt-4 -mr-4 font-normal">🌲</div>
+                
+                <p class="mb-4">
+                    Había una vez un pueblo pequeño llamado Valle-Verde, que <span class="verb-imperfect">estaba</span> escondido entre montañas muy altas y bosques llenos de frailejones. En este lugar, el agua de la laguna siempre <span class="verb-imperfect">era</span> cristalina y el aire <span class="verb-imperfect">se sentía</span> puro y fresco. Los habitantes del pueblo <span class="verb-imperfect">vivían</span> tranquilos porque el "Guardián de la niebla" protegía su territorio. Según los abuelos, el Guardián <span class="verb-imperfect">era</span> un ser gigante hecho de musgo y flores que solo <span class="verb-imperfect">aparecía</span> cuando el bosque estaba en peligro.
+                </p>
+                <p class="mb-4">
+                    Sin embargo, el 08 de mayo de un año olvidado, algo extraño <span class="verb-indefinite">ocurrió</span>. Todo <span class="verb-indefinite">empezó</span> cuando una empresa extranjera <span class="verb-indefinite">llegó</span> al valle con máquinas muy grandes. Los trabajadores <span class="verb-indefinite">empezaron</span> a cortar los árboles y el agua de la laguna se <span class="verb-indefinite">puso</span> oscura y triste. Ese día, el cielo se <span class="verb-indefinite">volvió</span> gris y un silencio absoluto <span class="verb-indefinite">dominó</span> la montaña.
+                </p>
+                <p class="mb-4">
+                    De repente, a las seis de la tarde, una niebla espesa <span class="verb-indefinite">cubrió</span> todo el campamento de los trabajadores. Ellos <span class="verb-indefinite">sintieron</span> un frío intenso y <span class="verb-indefinite">escucharon</span> un rugido que venía desde lo profundo del bosque. Asustados, los hombres <span class="verb-indefinite">corrieron</span> hacia sus camiones, pero las máquinas no se <span class="verb-indefinite">encendieron</span>.
+                </p>
+                <p class="mb-4">
+                    A la mañana siguiente, cuando el sol <span class="verb-indefinite">salió</span>, las máquinas ya no <span class="verb-imperfect">estaban</span>. En su lugar, los habitantes <span class="verb-indefinite">encontraron</span> cientos de árboles nuevos plantados alrededor de la laguna. Nadie <span class="verb-indefinite">vio</span> al guardián, pero todos <span class="verb-indefinite">comprendieron</span> el mensaje. Desde aquel momento, los habitantes de Valle-Verde <span class="verb-indefinite">prometieron</span> cuidar su agua y nunca más <span class="verb-indefinite">permitieron</span> que nadie dañara su hogar.
+                </p>
+            </div>
+            
+            <!-- ACTIVIDAD DE VOCABULARIO (ASOCIACIÓN) -->
+            <div class="mt-8 bg-emerald-50/50 p-6 rounded-2xl border-2 border-dashed border-emerald-300">
+                <h3 class="text-xl font-bold text-emerald-800 mb-2">🔍 Actividad de Vocabulario</h3>
+                <p class="text-gray-700 mb-6"><strong>Instrucción:</strong> Vuelve a leer el texto "El Guardián de la Niebla" y observa las imágenes iniciales. Relaciona cada palabra clave con su significado correcto deduciéndolo del relato. Escribe la letra correspondiente en el paréntesis:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                    <!-- Conceptos -->
+                    <div class="bg-white p-5 rounded-xl border border-emerald-100 shadow-sm space-y-3">
+                        <p class="font-bold text-emerald-800 text-lg border-b pb-2">Conceptos Clave</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 p-2 bg-emerald-50 rounded-lg text-emerald-950 font-semibold">
+                                <span class="bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">A</span> Frailejón
+                            </div>
+                            <div class="flex items-center gap-2 p-2 bg-emerald-50 rounded-lg text-emerald-950 font-semibold">
+                                <span class="bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">B</span> Laguna
+                            </div>
+                            <div class="flex items-center gap-2 p-2 bg-emerald-50 rounded-lg text-emerald-950 font-semibold">
+                                <span class="bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">C</span> Niebla
+                            </div>
+                            <div class="flex items-center gap-2 p-2 bg-emerald-50 rounded-lg text-emerald-950 font-semibold">
+                                <span class="bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">D</span> Páramo
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Definiciones -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                            <span class="font-extrabold text-gray-400 text-lg">(</span>
+                            <input type="text" id="match-1" aria-label="Definición 1" maxlength="1" placeholder=" " class="w-8 h-8 border-2 border-emerald-300 rounded text-center font-bold text-emerald-700 uppercase focus:outline-none focus:border-emerald-500 bg-white">
+                            <span class="font-extrabold text-gray-400 text-lg">)</span>
+                            <p class="text-sm text-gray-700">Gran acumulación de agua dulce estancada en una depresión del terreno.</p>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                            <span class="font-extrabold text-gray-400 text-lg">(</span>
+                            <input type="text" id="match-2" aria-label="Definición 2" maxlength="1" placeholder=" " class="w-8 h-8 border-2 border-emerald-300 rounded text-center font-bold text-emerald-700 uppercase focus:outline-none focus:border-emerald-500 bg-white">
+                            <span class="font-extrabold text-gray-400 text-lg">)</span>
+                            <p class="text-sm text-gray-700">Ecosistema de la alta montaña andina, húmedo y frío, clave para la producción de agua del territorio.</p>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                            <span class="font-extrabold text-gray-400 text-lg">(</span>
+                            <input type="text" id="match-3" aria-label="Definición 3" maxlength="1" placeholder=" " class="w-8 h-8 border-2 border-emerald-300 rounded text-center font-bold text-emerald-700 uppercase focus:outline-none focus:border-emerald-500 bg-white">
+                            <span class="font-extrabold text-gray-400 text-lg">)</span>
+                            <p class="text-sm text-gray-700">Planta típica de las zonas altas con hojas peludas que absorben la humedad del ambiente.</p>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+                            <span class="font-extrabold text-gray-400 text-lg">(</span>
+                            <input type="text" id="match-4" aria-label="Definición 4" maxlength="1" placeholder=" " class="w-8 h-8 border-2 border-emerald-300 rounded text-center font-bold text-emerald-700 uppercase focus:outline-none focus:border-emerald-500 bg-white">
+                            <span class="font-extrabold text-gray-400 text-lg">)</span>
+                            <p class="text-sm text-gray-700">Nube muy baja que toca la tierra y que dificulta la visión en el bosque.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-6">
+                    <button type="button" onclick="checkVocabulary()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-xl transition transform hover:scale-105 shadow-md">
+                        Comprobar Vocabulario
+                    </button>
+                    <div id="vocab-feedback" class="hidden mt-4 p-4 rounded-xl text-center font-bold text-lg"></div>
+                </div>
+            </div>
+
+            <!-- Leyenda de colores -->
+            <div class="flex flex-wrap gap-4 mt-8 justify-center">
+                <div class="flex items-center gap-2">
+                    <span class="verb-imperfect inline-block w-6 h-6 rounded"></span>
+                    <span class="text-sm font-bold text-gray-600">Pretérito Imperfecto (El escenario)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="verb-indefinite inline-block w-6 h-6 rounded"></span>
+                    <span class="text-sm font-bold text-gray-600">Pretérito Indefinido (La acción rápida)</span>
+                </div>
+            </div>
+
+            <!-- Misión de Búsqueda de Verbos -->
+            <div class="mt-8 bg-purple-50/50 p-6 rounded-2xl border-2 border-dashed border-purple-300">
+                <h3 class="text-xl font-bold text-purple-800 mb-4">🕵️‍♂️ Misión de Búsqueda en el Texto</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- A. El escenario -->
+                    <div class="bg-yellow-50 p-5 rounded-xl border border-yellow-200 shadow-sm">
+                        <p class="font-bold text-yellow-800 mb-2">A. El escenario (¿Cómo era?)</p>
+                        <p class="text-sm text-yellow-700 mb-4">Busca en el texto 3 verbos que describan situaciones habituales o escenarios y escríbelos aquí (Ejemplo: <em>vivían</em>).</p>
+                        <div class="space-y-3">
+                            <input type="text" placeholder="1. Escribe un verbo..." aria-label="Verbo de escenario 1" class="w-full p-2 border border-yellow-200 rounded-lg focus:outline-none focus:border-yellow-500 bg-white text-yellow-900 font-semibold">
+                            <input type="text" placeholder="2. Escribe un verbo..." aria-label="Verbo de escenario 2" class="w-full p-2 border border-yellow-200 rounded-lg focus:outline-none focus:border-yellow-500 bg-white text-yellow-900 font-semibold">
+                            <input type="text" placeholder="3. Escribe un verbo..." aria-label="Verbo de escenario 3" class="w-full p-2 border border-yellow-200 rounded-lg focus:outline-none focus:border-yellow-500 bg-white text-yellow-900 font-semibold">
+                        </div>
+                    </div>
+                    
+                    <!-- B. La acción -->
+                    <div class="bg-red-50 p-5 rounded-xl border border-red-200 shadow-sm">
+                        <p class="font-bold text-red-800 mb-2">B. La acción (¿Qué pasó?)</p>
+                        <p class="text-sm text-red-700 mb-4">Busca 3 verbos que identifiquen acciones que interrumpieron la tranquilidad del pueblo (Ejemplo: <em>llegó</em>).</p>
+                        <div class="space-y-3">
+                            <input type="text" placeholder="1. Escribe un verbo..." aria-label="Verbo de acción 1" class="w-full p-2 border border-red-200 rounded-lg focus:outline-none focus:border-red-500 bg-white text-red-900 font-semibold">
+                            <input type="text" placeholder="2. Escribe un verbo..." aria-label="Verbo de acción 2" class="w-full p-2 border border-red-200 rounded-lg focus:outline-none focus:border-red-500 bg-white text-red-900 font-semibold">
+                            <input type="text" placeholder="3. Escribe un verbo..." aria-label="Verbo de acción 3" class="w-full p-2 border border-red-200 rounded-lg focus:outline-none focus:border-red-500 bg-white text-red-900 font-semibold">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CUESTIONARIO DEL DETECTIVE -->
+            <div class="mt-8 bg-blue-50/75 p-6 rounded-2xl border-2 border-dashed border-blue-400">
+                <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center gap-2">🕵️‍♀️ Práctica Guiada: El Cuestionario del Detective</h3>
+                <p class="text-gray-700 mb-6"><strong>Instrucción:</strong> Imagina que eres parte del equipo de investigación ambiental que llegó a Valle-Verde. Responde las siguientes preguntas utilizando oraciones completas en pasado (Imperfecto para descripciones o costumbres, e Indefinido para acciones específicas):</p>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+                        <label for="detective-a" class="block font-bold text-gray-800 mb-2">A. ¿Cómo era la vida de los habitantes y cómo estaba el ecosistema antes del 8 de mayo?</label>
+                        <textarea id="detective-a" rows="2" placeholder="Escribe tu respuesta aquí usando el pasado descriptivo..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400 bg-gray-50 text-gray-800 font-medium"></textarea>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+                        <label for="detective-b" class="block font-bold text-gray-800 mb-2">B. ¿Qué eventos específicos ocurrieron cuando la empresa extranjera llegó al territorio con sus máquinas?</label>
+                        <textarea id="detective-b" rows="2" placeholder="Escribe tu respuesta aquí narrando las acciones ocurridas..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400 bg-gray-50 text-gray-800 font-medium"></textarea>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+                        <label for="detective-c" class="block font-bold text-gray-800 mb-2">C. Explica qué pasó con los trabajadores a las seis de la tarde cuando la niebla cubrió el campamento.</label>
+                        <textarea id="detective-c" rows="2" placeholder="Escribe tu respuesta detallando lo que les sucedió..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400 bg-gray-50 text-gray-800 font-medium"></textarea>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+                        <label for="detective-d" class="block font-bold text-gray-800 mb-2">D. ¿Qué encontraron las personas del pueblo a la mañana siguiente en el lugar donde estaban las máquinas?</label>
+                        <textarea id="detective-d" rows="2" placeholder="Escribe tu respuesta relatando el hallazgo de los habitantes..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-400 bg-gray-50 text-gray-800 font-medium"></textarea>
+                    </div>
+                </div>
+
+                <div class="text-center mt-6">
+                    <button type="button" onclick="revealDetectiveGuide()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition transform hover:scale-105 shadow-md">
+                        Guardar Notas y Ver Guía de Auto-Evaluación 📝
+                    </button>
+                    
+                    <div id="detective-feedback" class="hidden mt-6 bg-white p-5 rounded-xl border border-blue-200 text-left space-y-4">
+                        <p class="font-bold text-blue-950 text-lg border-b pb-2 flex items-center gap-1">🕵️‍♂️ Lista de Verificación del Detective:</p>
+                        <p class="text-sm text-gray-600">Compara tus respuestas escritas con las claves del reporte oficial para comprobar si usaste los tiempos verbales correctos:</p>
+                        
+                        <ul class="space-y-3 text-sm text-gray-700 leading-relaxed">
+                            <li class="bg-yellow-50 p-3 rounded-lg border-l-4 border-yellow-400">
+                                <strong>Pregunta A (Escenario):</strong> Debiste usar el <span class="text-yellow-800 font-bold">Pretérito Imperfecto</span> para describir. <br>
+                                <em>Ejemplo:</em> "Los habitantes <strong>vivían</strong> tranquilos y el agua de la laguna siempre <strong>era</strong> cristalina."
+                            </li>
+                            <li class="bg-red-50 p-3 rounded-lg border-l-4 border-red-400">
+                                <strong>Pregunta B (Acción específica):</strong> Debiste usar el <span class="text-red-800 font-bold">Pretérito Indefinido</span> para narrar. <br>
+                                <em>Ejemplo:</em> "La empresa <strong>llegó</strong>, los trabajadores <strong>empezaron</strong> a cortar los árboles y el cielo se <strong>volvió</strong> gris."
+                            </li>
+                            <li class="bg-red-50 p-3 rounded-lg border-l-4 border-red-400">
+                                <strong>Pregunta C (Acción repentina):</strong> Debiste usar el <span class="text-red-800 font-bold">Pretérito Indefinido</span>. <br>
+                                <em>Ejemplo:</em> "Los trabajadores <strong>sintieron</strong> un frío intenso, <strong>escucharon</strong> un rugido y <strong>corrieron</strong> asustados."
+                            </li>
+                            <li class="bg-green-50 p-3 rounded-lg border-l-4 border-green-400">
+                                <strong>Pregunta D (Acción y descripción):</strong> Una mezcla perfecta. Se narra el hallazgo en <span class="text-red-800 font-bold">Indefinido</span> y se describe dónde estaban las máquinas en <span class="text-yellow-800 font-bold">Imperfecto</span>. <br>
+                                <em>Ejemplo:</em> "A la mañana siguiente, los habitantes <strong>encontraron</strong> árboles nuevos donde antes <strong>estaban</strong> las máquinas."
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Sección 3: Gramática Estructurada -->
+         <section class="bg-white rounded-3xl p-6 md:p-8 card-shadow border-2 border-green-100">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-orange-100 w-12 h-12 rounded-full flex items-center justify-center text-2xl">🧠</div>
+                <h2 class="text-3xl text-orange-700 font-bold">3. Análisis Gramatical: ¿Cómo contamos la historia?</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden rounded-2xl border-2 border-gray-200">
+                <!-- Columna Imperfecto -->
+                <div class="bg-yellow-50 p-6 border-b-2 md:border-b-0 md:border-r-2 border-gray-200">
+                    <h3 class="text-xl font-bold text-yellow-700 mb-2 text-center">EL ESCENARIO</h3>
+                    <p class="text-center font-bold text-gray-500 mb-4 bg-white py-1 rounded-full text-sm">(Pretérito Imperfecto)</p>
+                    <p class="mb-4 text-sm">Se usa para <strong>describir</strong> el lugar y las situaciones habituales. Responde a: <em>¿Cómo era?</em></p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <span class="text-yellow-500">🎨</span>
+                            <span>El agua <strong>era</strong> cristalina.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-yellow-500">🎨</span>
+                            <span>Los habitantes <strong>vivían</strong> tranquilos.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-yellow-500">🎨</span>
+                            <span>El Guardián <strong>aparecía</strong> in la niebla.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Columna Indefinido -->
+                <div class="bg-red-50 p-6">
+                    <h3 class="text-xl font-bold text-red-700 mb-2 text-center">LA ACCIÓN</h3>
+                    <p class="text-center font-bold text-gray-500 mb-4 bg-white py-1 rounded-full text-sm">(Pretérito Indefinido)</p>
+                    <p class="mb-4 text-sm">Se usa para <strong>narrar</strong> eventos específicos que interrumpen o cambian la historia. Responde a: <em>¿Qué pasó de repente?</em></p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500">⚡</span>
+                            <span>Una empresa <strong>llegó</strong> al Valle.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500">⚡</span>
+                            <span>El cielo se <strong>volvió</strong> gris.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-500">⚡</span>
+                            <span>La niebla <strong>cubrió</strong> el campamento.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Ejercicio Interactivo -->
+        <section class="bg-white rounded-3xl p-6 md:p-8 card-shadow border-2 border-green-100">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center text-2xl">✍️</div>
+                <h2 class="text-3xl text-pink-700 font-bold">4. ¡A practicar!</h2>
+            </div>
+            <p class="mb-6 text-gray-600">Completa las frases con el verbo correcto. Piensa: ¿Es descripción (Imperfecto) o es una acción de repente (Indefinido)?</p>
+
+            <form id="quiz-form" class="space-y-6">
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                    <p class="text-lg mb-3">
+                        <label for="q1">1. Había una vez un pueblo pequeño que </label>
+                        <select id="q1" class="border-2 border-pink-300 rounded p-1 font-bold text-pink-700 bg-white">
+                            <option value="">---</option>
+                            <option value="estaba">estaba</option>
+                            <option value="estuvo">estuvo</option>
+                        </select> escondido entre montañas altas.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                    <p class="text-lg mb-3">
+                        <label for="q2">2. Cuando bajó la niebla, los trabajadores </label>
+                        <select id="q2" class="border-2 border-pink-300 rounded p-1 font-bold text-pink-700 bg-white">
+                            <option value="">---</option>
+                            <option value="sentían">sentían</option>
+                            <option value="sintieron">sintieron</option>
+                        </select> un frío intenso.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                    <p class="text-lg mb-3">
+                        <label for="q3">3. Asustados por el ruido, los hombres </label>
+                        <select id="q3" class="border-2 border-pink-300 rounded p-1 font-bold text-pink-700 bg-white">
+                            <option value="">---</option>
+                            <option value="corrían">corrían</option>
+                            <option value="corrieron">corrieron</option>
+                        </select> hacia sus camiones.
+                    </p>
+                </div>
+
+                <div class="text-center mt-6">
+                    <button type="button" onclick="checkAnswers()" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full text-xl transition transform hover:scale-105 shadow-md">
+                        ¡Comprobar Respuestas!
+                    </button>
+                </div>
+                
+                <div id="feedback" class="hidden mt-4 p-4 rounded-xl text-center font-bold text-lg"></div>
+            </form>
+        </section>
+
+        <!-- Sección 5: Tarea Final Creativa -->
+        <section class="bg-green-700 text-white rounded-3xl p-6 md:p-8 shadow-xl relative overflow-hidden">
+            <div class="absolute right-0 bottom-0 text-[10rem] opacity-20 transform translate-x-8 translate-y-8 font-normal">📰</div>
+            
+            <div class="relative z-10 space-y-6">
+                <h2 class="text-3xl font-bold title-font">🎨 Tarea Final Creativa: “El Reporte del Guardián”</h2>
+                <p class="text-lg text-green-100">¡Eres un periodista ambiental! Utiliza Canva para crear una página de periódico o un post de Instagram denunciando lo ocurrido en la laguna de Valle-Verde.</p>
+                
+                <!-- INSTRUCCIONES DE REDACCIÓN COMPLETAS -->
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
+                    <h3 class="font-bold text-xl mb-4 text-yellow-300">📝 Instrucción de redacción:</h3>
+                    <p class="text-sm text-green-500 mb-4 bg-white/90 inline-block px-3 py-1 rounded-full font-bold uppercase tracking-wider">Misión de Escritura</p>
+                    <p class="text-sm text-white/90 mb-4 leading-relaxed">Para que tu boletín de noticias en Canva quede perfecto, tu artículo periodístico debe resolver los siguientes interrogantes para tus lectores, combinando los dos pasados aprendidos:</p>
+                    
+                    <ul class="space-y-4 text-sm leading-relaxed text-gray-100">
+                        <li class="flex items-start gap-3 bg-black/10 p-3 rounded-xl border border-white/10">
+                            <span class="text-yellow-400 font-bold text-base">1.</span>
+                            <span><strong>¿Qué pasó? (El hecho central):</strong> Narra la desaparición de las máquinas y la aparición de los árboles usando el <strong>Pretérito Indefinido</strong>.</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-black/10 p-3 rounded-xl border border-white/10">
+                            <span class="text-yellow-400 font-bold text-base">2.</span>
+                            <span><strong>¿Dónde pasó? (El escenario):</strong> Describe cómo era la laguna y el bosque usando el <strong>Pretérito Imperfecto</strong>.</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-black/10 p-3 rounded-xl border border-white/10">
+                            <span class="text-yellow-400 font-bold text-base">3.</span>
+                            <span><strong>¿Quiénes participaron?:</strong> Habla de lo que hicieron los trabajadores y la reacción de los habitantes del pueblo.</span>
+                        </li>
+                        <li class="flex items-start gap-3 bg-black/10 p-3 rounded-xl border border-white/10">
+                            <span class="text-yellow-400 font-bold text-base">4.</span>
+                            <span><strong>¿Cuál es la conclusión?:</strong> Explica la promesa final del pueblo de Valle-Verde para proteger el agua y su territorio.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Upload area -->
+                <div class="bg-white/10 p-4 rounded-xl border border-dashed border-white/30 text-center">
+                    <p class="font-bold text-white mb-2">Sube tu trabajo final terminado aquí:</p>
+                    <input type="file" class="hidden" id="file-upload">
+                    <label for="file-upload" class="cursor-pointer inline-block bg-white text-green-800 font-bold py-2 px-6 rounded-lg hover:bg-green-50 transition shadow">
+                        Seleccionar archivo de tu computadora
+                    </label>
+                </div>
+                
+                <div class="text-center pt-2">
+                    <a href="https://www.canva.com" target="_blank" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-green-950 font-black py-3 px-8 rounded-full text-lg shadow-lg transition transform hover:scale-105">
+                        Ir a Canva a Diseñar 🎨
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script interactivo unificado -->
+    <script>
+        function revealDetectiveGuide() {
+            const fb = document.getElementById('detective-feedback');
+            fb.classList.remove('hidden');
+            fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function checkVocabulary() {
+            const m1 = document.getElementById('match-1').value.trim().toUpperCase();
+            const m2 = document.getElementById('match-2').value.trim().toUpperCase();
+            const m3 = document.getElementById('match-3').value.trim().toUpperCase();
+            const m4 = document.getElementById('match-4').value.trim().toUpperCase();
+            const fb = document.getElementById('vocab-feedback');
+            
+            let score = 0;
+            if(m1 === 'B') score++;
+            if(m2 === 'D') score++;
+            if(m3 === 'A') score++;
+            if(m4 === 'C') score++;
+            
+            fb.className = "mt-4 p-4 rounded-xl text-center font-bold text-lg";
+            
+            if (score === 4) {
+                fb.classList.add('bg-green-100', 'text-green-800');
+                fb.innerHTML = "¡Excelente! 🌿 Relacionaste correctamente todas las palabras clave con su significado.";
+            } else if (score > 0) {
+                fb.classList.add('bg-yellow-100', 'text-yellow-800');
+                fb.innerHTML = `Tienes ${score} de 4 correctas. ¡Revisa con atención e inténtalo de nuevo!`;
+            } else {
+                fb.classList.add('bg-red-100', 'text-red-800');
+                fb.innerHTML = "Intenta de nuevo. Relaciona los conceptos basándote en lo leído en la historia.";
+            }
+        }
+
+        function checkAnswers() {
+            const q1 = document.getElementById('q1').value;
+            const q2 = document.getElementById('q2').value;
+            const q3 = document.getElementById('q3').value;
+            const feedbackBox = document.getElementById('feedback');
+            
+            let score = 0;
+            if(q1 === 'estaba') score++;
+            if(q2 === 'sintieron') score++;
+            if(q3 === 'corrieron') score++;
+            
+            feedbackBox.className = "mt-4 p-4 rounded-xl text-center font-bold text-lg";
+            
+            if (score === 3) {
+                feedbackBox.classList.add('bg-green-100', 'text-green-800');
+                feedbackBox.innerHTML = "¡Excelente! 🌟 Entiendes perfectamente la diferencia entre describir (Imperfecto) y narrar acciones (Indefinido).";
+            } else if (score > 0) {
+                feedbackBox.classList.add('bg-yellow-100', 'text-yellow-800');
+                feedbackBox.innerHTML = `Tienes ${score} de 3 correctas. ¡Casi lo logras! Recuerda: las rutinas usan Imperfecto y los eventos rápidos Indefinido.`;
+            } else {
+                feedbackBox.classList.add('bg-red-100', 'text-red-800');
+                feedbackBox.innerHTML = "Vuelve a leer la tabla de gramática y fíjate si es una descripción o una interrupción. ¡Tú puedes!";
+            }
+        }
+    </script>
+</body>
+</html>
